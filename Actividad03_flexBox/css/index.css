@@ -1,0 +1,104 @@
+
+body{ /*quitamos scroll, debido a que el body tiene sus propios margin y padding*/
+    margin: 0;
+    padding: 0;
+}
+
+.fondo{
+    background-image: url('../img/FondoYop.jpg');
+    width: 100%;
+    height: 100vh;/*altura vertical para que adapte a todos los dispositivos*/
+    background-size: cover;/*para que no se repita y se adapte al contenedor*/
+    background-position: center;/*centramos la imagen*/
+    z-index: 1;
+
+}
+
+.content{
+    position: relative;
+    height: 35%;
+    width: 40%;
+    background-color:  rgb(157, 200, 230);
+    font-family: monospace;
+    text-align: center;
+    margin-top: 15%;
+    margin-left: 20%;
+    margin-right: 10%;
+    float:right;
+    font-size: 400%;
+    border-radius: 30px;
+    border:steelblue solid;
+    z-index: 2;
+          
+}
+
+.nombre, .apellidos{
+
+    display: flex;
+    
+   /* height: 30%;
+    width: 40%;
+    background-color:  rgb(208, 228, 242);*/
+    font-family: monospace;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 30%;
+    float:right;
+    font-size: 40px;
+    border-radius: 30px;
+    z-index: 2;
+    
+}
+
+.apellidos{
+    
+    position: relative;
+    height: 30%;
+    width: 50%;
+    text-align: center;
+    margin-top: 5%;
+    margin-right: 25%;
+}
+
+.menu{
+    width: 100%;
+    float: left;
+   
+  }
+  
+.menu ul li {
+    display: flex;
+    float: right;
+    list-style-type:none;
+    text-align: left;
+    
+  }
+  
+.menu ul li a{
+    padding: 10px;
+    color: white;
+    font-size: 150%;
+    font-family:monospace;
+    text-decoration: none;
+}
+    
+.menu ul li a:hover{
+    border-bottom: 7px solid rgba(76, 168, 204, 0.7);
+    padding-bottom: 3px; 
+
+}
+/*.social a{
+    
+    height: 15px;
+    width: 15px;
+    position: relative;
+    top:15px;
+    
+}*/
+
+
+
+
+
+
