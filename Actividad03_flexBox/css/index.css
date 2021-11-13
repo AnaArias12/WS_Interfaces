@@ -5,77 +5,80 @@ body{ /*quitamos scroll, debido a que el body tiene sus propios margin y padding
 }
 
 .fondo{
+    
     background-image: url('../img/FondoYop.jpg');
     width: 100%;
     height: 100vh;/*altura vertical para que adapte a todos los dispositivos*/
     background-size: cover;/*para que no se repita y se adapte al contenedor*/
     background-position: center;/*centramos la imagen*/
     z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+
 
 }
 
 .content{
-    position: relative;
-    height: 35%;
-    width: 40%;
+    display: flex;
+    height: 15vh;
+    width: 30vh;
     background-color:  rgb(157, 200, 230);
     font-family: monospace;
+    font-size: 20px;
     text-align: center;
     margin-top: 15%;
     margin-left: 20%;
     margin-right: 10%;
     float:right;
-    font-size: 400%;
     border-radius: 30px;
     border:steelblue solid;
     z-index: 2;
+    flex-direction: column;
+    align-content: center;
+   
           
 }
 
 .nombre, .apellidos{
 
-    display: flex;
     
-   /* height: 30%;
+    height: 30%;
     width: 40%;
-    background-color:  rgb(208, 228, 242);*/
+    background-color:  rgb(208, 228, 242);
     font-family: monospace;
     text-align: center;
     margin-top: 5%;
     margin-left: 20%;
-    margin-right: 30%;
+    margin-right: 20%;
     float:right;
-    font-size: 40px;
     border-radius: 30px;
     z-index: 2;
+   
     
 }
 
-.apellidos{
-    
-    position: relative;
-    height: 30%;
-    width: 50%;
-    text-align: center;
-    margin-top: 5%;
-    margin-right: 25%;
-}
+
 
 .menu{
+    display: flex;
     width: 100%;
     float: left;
+    align-items: left;
+    flex-direction: column;
    
-  }
-  
+   
+}
+
 .menu ul li {
-    display: flex;
-    float: right;
+  
+   
     list-style-type:none;
-    text-align: left;
     
-  }
+    
+}
   
 .menu ul li a{
+    
     padding: 10px;
     color: white;
     font-size: 150%;
