@@ -1,5 +1,5 @@
 body {
-    display: grid;
+   
     height: 100%;
     text-align: center;
     background: #f7f7f7;
@@ -14,18 +14,22 @@ body {
     
 }
 ul {
-   
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% repeat(8, 10%);
+    row-gap: 5%;
+    top: none;
     list-style-type: none;
     
 }
 
 li {
+   
     margin: 0;
     padding: 0;
     list-style: none;
 }
 b {
-   
     line-height: 20px;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -36,12 +40,15 @@ b {
     text-align: center;
 
 }
+a{
+    text-align: center;
+}
+
+
 h1, a {
     color: #03A9F4;
 }
-a {
-    outline: 0 none;
-}
+
 a, a:hover {
     transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     text-decoration: none;
