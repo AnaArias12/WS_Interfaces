@@ -11,8 +11,17 @@ body {
     font-size: 1.8rem;
     line-height: 3.4rem;
     margin: 0 0 150px;
-    
+    grid-template-areas: "row1"
+                         "row2"
+                         "row3"
+                         "row4";
+       
 }
+.row1 {grid-area: row1; background:rgba(207, 204, 204, 0.981);}
+.row2 {grid-area: row2; background:rgba(172, 170, 170, 0.981);}
+.row3 {grid-area: row3; background:rgba(138, 136, 136, 0.981);}
+.row4 {grid-area: row4; background:rgba(82, 80, 80, 0.981);}
+
 h1{
     color: violet;
 }
