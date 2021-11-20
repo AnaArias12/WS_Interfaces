@@ -1,5 +1,5 @@
 body {
-    display: flex;
+    display: grid;
     height: 100%;
     text-align: center;
     background: #f7f7f7;
@@ -9,13 +9,13 @@ body {
     line-height: 34px;
     line-height: 3.4rem;
     margin: 0 0 150px;
-    flex-direction: column;
-    flex-flow: column wrap;
-    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% repeat(3, 50%);
 }
 h1{
     font-size: 2.5rem ;
     color: goldenrod;
+     
     
 }
 h2 {
@@ -37,39 +37,31 @@ h3{
 
 article{
     position: relative;
-    display: block;
     margin-left: 15%;
     margin-right: 15%;
 
 }
 
-/*.job1{
-    width: 50px;
-    height: 50px;
-    position: absolute;
+.job1{
+    margin-bottom: none;
     top: 50%;
     left: 50%;
-    margin: -25px 0 0 -25px;
     text-align: center;
   
 
 }
-/*.job2{
-    width: 50px;
-    height: 50px;
-    position: absolute;
+.job2{
+    margin-top: 10%;
     top: 50%;
     left: 50%;
     margin: -25px 0 0 -25px;
     text-align: center;
 
-}*/
-/*.job3{
-    width: 50px;
-    height: 50px;
-    position: absolute;
+}
+.job3{
+    margin-top: 10%;
     top: 50%;
     left: 50%;
     margin: -25px 0 0 -25px;
     text-align: center;
-}*/
+}

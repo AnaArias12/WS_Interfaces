@@ -1,5 +1,5 @@
 body {
-    display: flex;
+    display: grid;
     height: 100%;
     text-align: center;
     background: #f7f7f7;
@@ -10,9 +10,7 @@ body {
     line-height: 34px;
     font-size: 1.8rem;
     line-height: 3.4rem;
-    flex-direction: column;
-    flex-flow: column wrap;
-    align-items: center;
+    
     
 }
 ul {
