@@ -1,0 +1,41 @@
+<html>
+  <head>
+	  <title> Ejemplo de modelo de cajas</title>
+	  <style>
+		* {border: 2px solid; text-align: center; margin:20px;}
+	    html {border: 4px solid;}
+		body {border: dotted;}
+		h1, h2 {background-color: pink;}
+		div {border: 2px solid}
+		a {background-color: orange; border: 2px solid}
+		a.absoluto {background-color: pink;}
+		a.abajo {position:relative; top:1em;}
+		a.mas_abajo {position:relative; top:2em;}
+		.fijo {position: fixed; bottom:0; width:80%; height:40px;
+				margin: 0; left:10%;background-color:#CCC}
+		.fijo p {border: 0; margin: 10px}
+	  </style>
+  </head>
+  <body>
+	  <h1> BIENVENIDO A CSS</h1>
+	  <h2> Posicionamiento absoluto</h2>
+	  <div>
+		<p> Esta caja tiene posicionamiento normal o estático: </p>
+			<a href="#" class="absoluto"> Enlace 1 </a>
+			<a href="#"> Enlace 2 </a>
+			<a href="#"> Enlace 3 </a>
+	  </div>
+	  <p> Párrafo 2:
+		<a href="#"> Enlace 1 </a>
+		<a href="#" class="abajo"> Enlace 2 </a>
+		<a href="#" class="mas_abajo"> Enlace 3 </a>
+	  </p>
+	  <p>Similar al posucionamiento absoluto, pero cuando el usuario desplaza la barra ... 
+	  Esto resulta util para encabezados y pies de pagina que se mantienen ... 
+	  Tambien es posible aplicar el poscionamiento fijo a un menu de navegador</p>
+	  <div class="fijo"> Esta caja permanece fija</div>
+	  
+  </body>
+	  
+ </html>
+	

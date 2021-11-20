@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Home</title>
+		<style type="text/css">
+			.container {
+			  margin: 0.5em 5em;
+			  display: grid;
+			  grid-template-columns: repeat(3, 1fr) 50px repeat(3, 1fr);
+			  grid-template-rows: 3rem 20px 100px 100px;
+			  gap: 1rem;
+			}
+
+			.heading {
+			  grid-column-start: 1;
+			  grid-column-end: 8;
+			  grid-row-start: 2;
+			  grid-row-end: 1;
+			  justify-self: center;
+			}
+			.img-a {
+			  grid-area: 3 / 1 / span 2 / span 1;
+			}
+			.img-b {
+			  grid-area: 3 / 2 / span 1 / span 1;
+			}
+			.img-c {
+			  grid-area: 7 / 2 / span 1 / span 1;
+			}
+			.textblock {
+			  grid-area: -3 / -4 / span 2 / span 2;
+			  align-self: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="heading">gvsdfbg</div>
+			<div class="img-a">
+			    <img src="https://picsum.photos/300/600/?random">
+			  </div>
+			<div class="img-b">
+			    <img src="https://picsum.photos/300/250/?random">
+			</div>  
+			<div class="img-c">
+			    <img src="https://picsum.photos/300/335/?random">
+			</div> 
+			<div class="textblock">
+				<h1>Bienvenidos!!</h1>
+				<p>sdvgafgdfg</p>
+			</div> 
+		</div>
+	</body>
+</html>

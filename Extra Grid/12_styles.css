@@ -1,0 +1,39 @@
+.container{
+	height: 95vh;
+	margin: 0;
+	padding: 0;
+}
+.item{
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3em;
+}
+.item-1{
+	background-color: #0E1628;
+}
+
+.item-2{
+	background-color: #F13A4B;
+}
+
+.item-3{
+	background-color: #4685C4;
+}
+
+.item-4{
+	background-color: #223349;
+}
+
+.item-5{
+	background-color: #BEE3E5;
+}
+
+.item-6{
+	background-color: #47BD99;
+}
+
+.item-7{
+	background-color: #FFD170;
+}

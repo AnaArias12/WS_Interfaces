@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Posicion en el grid</title>
+		<style type="text/css">
+			.grid {
+			  display: grid;
+			  background-color: blue;
+			  height: 300px;
+			  justify-items: center;
+			  align-items: center;
+			  grid-template-areas: "head head"
+			                       "menu main"
+			                       "foot foot";
+			  
+			}
+
+			.a { grid-area: head; background: royalblue; }
+			.b { grid-area: menu; background: red }
+			.c { grid-area: main; background: green }
+			.d { grid-area: foot; background: orange }
+			.grid, .a, .b, .c, .d{
+				border: 3px solid black;
+				color:  white;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="grid">
+		  <div class="a">Item 1</div>
+		  <div class="b">Item 2</div>
+		  <div class="c">Item 3</div>
+		  <div class="d">Item 4</div>
+		</div>
+	</body>
+</html>

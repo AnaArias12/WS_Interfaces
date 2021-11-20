@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Columnas+Filas</title>
+		<style type="text/css">
+			.container {
+			  display: flex; /* or inline-flex */
+			  background-color: blue;
+			  flex-direction: column;
+			}
+			.subcontainer {
+			  display: flex; /* or inline-flex */
+			  background-color: red;
+			  flex-direction: row;
+			  width: 300px;
+			}
+			.item {
+			    border: 2px solid black;
+			    background-color: grey;
+			    color: white;
+			    width: 100px;
+			    height: 100px;
+			}
+			.subitem {
+			    border: 2px solid white;
+			    background-color: orangered;
+			    color: white;
+			    width: 30px;
+			    height: 30px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="container"> <!-- Flex Container -->
+			<div class="item item-1"> 1</div>
+			<div class="subcontainer"> 2
+				<div class="subitem">2.1</div>
+				<div class="subitem">2.2</div>
+				<div class="subitem">2.3</div>
+			</div>
+			<div class="item item-3"> 3</div>
+		</div>
+	</body>
+</html>

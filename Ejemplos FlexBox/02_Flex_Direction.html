@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Flex Direction</title>
+		<style type="text/css">
+			.container {
+			  display: flex; /* or inline-flex */
+			  background-color: blue;
+			  flex-direction: row;
+			}
+			.item {
+			    border: 2px solid black;
+			    background-color: grey;
+			    color: white;
+			    width: 250px;
+			    height: 100px;
+			}
+			.subcontainer{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.subitem{
+				width: 50px;
+				border: 2px solid black;
+				height: 20px;
+				background-color: orangered;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="container"> <!-- Flex Container -->
+			<div class="subcontainer item item-1">
+				<div class="subitem">1.1</div>
+				<div class="subitem">1.2</div>
+				<div class="subitem">1.3</div>
+			</div>
+			<div class="item item-2"> 2</div>
+			<div class="item item-3"> 3</div>
+		</div>
+	</body>
+</html>

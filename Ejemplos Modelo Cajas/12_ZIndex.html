@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Z-Index</title>
+		<style type="text/css">
+		.pink, .blue, .orange {
+		position: absolute;
+		}
+		.pink {
+		top: 40px;
+		left: 40px;
+		background: pink;
+		}
+		.blue {
+		top: 80px;
+		left: 80px;
+		background: blue;
+
+		}
+		.green {
+		background: green;
+		z-index:100000; /* No afecta, porque para que pudiera ser apilado TIENE que estar posicionado*/
+		}
+		.orange {
+		height: 100px;
+		width: 100px;
+		background: orange;
+		font-size: 14px;
+		z-index:3;
+		}
+		div {
+		height: 150px;
+		width: 150px;
+		color: white;
+		font-family: "Courier New", Courier, monospace;
+		text-align: right;
+		padding: 5px;
+		box-sizing: border-box;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="pink">
+			Posicionado
+		<div class="orange">Posicionado</div>
+		</div>
+		<div class="blue">Posicionado</div>
+		<div class="green">No-Posicionado</div>
+	</body>
+</html>

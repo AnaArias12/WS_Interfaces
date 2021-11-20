@@ -1,0 +1,47 @@
+<html>
+	<header>
+		<title>Primer Formulario</title>
+
+	</header>
+	<body>
+		
+		<form action="ejemplo.php" method="get">
+				<div>
+					Indique su nivel (Malo, Regular, Bueno):
+					<input type="range" name="rango"
+					  min="1" max="3" list="lista-rango">
+					<datalist id="lista-rango">
+					  <option value="1" label="Malo">
+					  <option value="2" label="Regular">
+					  <option value="3" label="Bueno">
+					</datalist>
+				</div>
+
+				<div>
+					<input type="file" name="archivo">
+				</div>
+
+				<div>
+					<textarea name="texto" rows="4" cols="40">Escriba algo</textarea>
+				</div>
+				<div>	
+					<select name="menu">
+					  <option>Uno</option>
+					  <option value="2">Dos</option>
+					  <option value="three">Tres</option>
+					</select>
+				</div>
+				<div>
+					<select name="menu">
+					  <option value="1">Uno</option>
+					  <option value="2">Dos</option>
+					  <option value="3" selected>Tres</option>
+					</select>
+				</div>
+				
+				<input type="submit" value="Enviar">
+		    	<input type="reset" value="Borrar">
+		</form>
+	</body>
+
+</html>
